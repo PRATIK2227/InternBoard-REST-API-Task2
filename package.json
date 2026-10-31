@@ -1,0 +1,31 @@
+{
+  "name": "internboard-rest-api-task-2",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "InternBoard internship records REST API with validation, pagination and SQLite persistence.",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:seed": "node src/config/seed.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "zod": "^4.0.5"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4",
+    "vitest": "^5.0.5"
+  }
+}
